@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <title>SpendWise: Spend smart. Save more.</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    </head>
+    <body>
+
+        <!-- ===== LANDING PAGE (home) ===== -->
+        <div id="landing">
+            <div class="wrap">
+                <div class="top">
+                    <div class="brand"><span class="lg"></span> SpendWise</div>
+                    <div class="links">
+                        <a href="#features">Features</a>
+                        <a href="#about">About</a>
+                        <a href="#founder">Founder</a>
+                        <button class="btn ghost sm" id="li">Log in</button>
+                        <button class="btn sm" data-open id="topcta">Sign up</button>
+                    </div>
+                </div>
+                <div class="hero">
+                    <h1>Spend smart.<br><span>Save more.</span></h1>
+                    <p>SpendWise is a simple, friendly budget tracker. Set your own limits, log what you spend, and see exactly where your money goes.</p>
+                    <div class="row"><button class="btn" data-open id="cta">Get Started</button><a class="btn ghost" href="#about" style="text-decoration:none">Learn more</a></div>
+                    <div class="hp" id="hp"></div>
+                </div>
+
+                <!-- About -->
+                <section class="blk" id="about">
+                    <h2 class="t">About SpendWise</h2>
+                    <p class="sub">Managing money should not feel complicated. SpendWise gives you a clear picture of your budget in seconds. Create a free account with your email or phone number and start in under a minute.</p>
+                    <div class="grid3">
+                        <div class="box">
+                            <div class="ico">🎯</div>
+                            <h3>Your own budgets</h3>
+                            <p class="small">Choose a limit for every category, from food to rent, and change it any time.</p>
+                        </div>
+                        <div class="box">
+                            <div class="ico">⚡</div>
+                            <h3>Live tracking</h3>
+                            <p class="small">Add an expense and watch your balance, progress bars and warnings update instantly.</p>
+                        </div>
+                        <div class="box">
+                            <div class="ico">📊</div>
+                            <h3>Clear insights</h3>
+                            <p class="small">See which categories take most of your money so you can make better choices.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Features -->
+                <section class="blk" id="features">
+                    <h2 class="t">Everything you need to manage your money</h2>
+                    <p class="sub">Simple tools that help you plan, track and save with confidence.</p>
+                    <div class="grid3">
+                        <div class="box">
+                            <div class="ico">💰</div>
+                            <h3>Savings goals</h3>
+                            <p class="small">Set a goal, track your progress, and stay motivated to reach it.</p>
+                        </div>
+                        <div class="box">
+                            <div class="ico">📅</div>
+                            <h3>Smart spending plans</h3>
+                            <p class="small">Plan your spending before the month begins and stay on track.</p>
+                        </div>
+                        <div class="box">
+                            <div class="ico">🔔</div>
+                            <h3>Spending alerts</h3>
+                            <p class="small">Get a warning when you’re close to reaching a budget limit.</p>
+                        </div>
+                        <div class="box">
+                            <div class="ico">🧾</div>
+                            <h3>Easy expense logging</h3>
+                            <p class="small">Record an expense in seconds and keep every purchase organized.</p>
+                        </div>
+                        <div class="box">
+                            <div class="ico">🔄</div>
+                            <h3>Recurring expenses</h3>
+                            <p class="small">Keep track of rent, subscriptions, bills, and other regular payments.</p>
+                        </div>
+                        <div class="box">
+                            <div class="ico">🏆</div>
+                            <h3>Money challenges</h3>
+                            <p class="small">Try simple saving challenges and build better money habits.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="blk">
+                    <h2 class="t">Made for everyone, everywhere 🌍</h2>
+                    <p class="sub">Any currency, any country, any goal.</p>
+                    <div class="grid3" id="ppl"></div>
+                </section>
+
+                <!-- Founder -->
+                <section class="blk" id="founder">
+                    <h2 class="t">Meet the Founder</h2>
+                    <div class="box founder">
+                        <div class="pic">FY</div>
+                        <div style="flex:1;min-width:220px">
+                            <h3>Feisal Abdi Yussuf</h3>
+                            <p class="tag">Founder · Software Engineer &amp; Web Developer</p>
+                            <p class="small" style="font-size:1rem">Feisal is a software engineer and web developer from Kenya, passionate about building simple, useful tools. He started SpendWise in 2026 to help people take control of their spending, one expense at a time.</p>
+                            <p style="margin-top:.8rem"><a id="mail" href="mailto:feisalabdiyussuf1@gmail.com" style="color:var(--brand);font-weight:600">✉️ feisalabdiyussuf1@gmail.com</a></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Footer -->
+            <footer>© 2026 SpendWise · Built by Feisal Abdi Yussuf, Kenya 🇰🇪 · <a href="#" id="pv" style="color:var(--brand);font-weight:600">Privacy</a></footer>
+        </div>
+
+        <!-- ===== THE APP (after log in) ===== -->
+        <div id="app" hidden>
+
+            <!-- Sidebar menu -->
+            <aside class="side">
+                <div class="brand"><span class="lg"></span> SpendWise</div>
+                <button class="nav on" data-page="dash">🏠 Dashboard</button>
+                <button class="nav" data-page="tx">🧾 Transactions</button>
+                <button class="nav" data-page="bud">🎯 Budgets</button>
+                <button class="nav" data-page="goals">🐷 Goals</button>
+                <button class="nav" data-page="rec">🔄 Recurring</button>
+                <button class="nav" data-page="ch">🏆 Challenges</button>
+                <button class="nav" data-page="ana">📊 Analytics</button>
+                <button class="nav" data-page="set">⚙️ Settings</button>
+            </aside>
+            <div class="main">
+                <div class="bar">
+                    <div class="who">
+                        <div class="av" id="av"></div>
+                        <b id="nm"></b>
+                    </div>
+                    <div style="display:flex;gap:.5rem">
+                        <button class="btn ghost sm" id="theme">🌓 Theme</button>
+                        <button class="btn ghost sm" id="home">← Home</button>
+                        <button class="btn ghost sm" id="lo2">Log out</button>
+                    </div>
+                </div>
+
+                <!-- Dashboard page -->
+                <section class="page on" id="p-dash">
+                    <h1 class="pt" id="hi"></h1>
+                    <p class="small">Here is your budget at a glance.</p>
+                    <div id="rdue" class="box" hidden style="margin-top:1rem;cursor:pointer;border-color:var(--accent);font-weight:600"></div>
+                    <div class="stats">
+                        <div class="box stat"><small>💰 Total Budget</small><b id="s-b">0</b></div>
+                        <div class="box stat"><small>💳 Total Expenses</small><b id="s-e">0</b></div>
+                        <div class="box stat"><small>📊 Remaining Balance</small><b id="s-r">0</b></div>
+                    </div>
+                    <h2 class="t" style="font-size:1.3rem">My Budgets <span class="small">(tap a card to see its transactions)</span></h2>
+                    <div class="grid3" id="cats" style="margin-top:1rem"></div>
+                    <h2 class="t" style="font-size:1.3rem;margin-top:2rem">Add New Expense</h2>
+                    <div class="box" style="margin-top:1rem">
+                        <form class="f" id="ef">
+                            <label for="en">Expense Name</label>
+                            <input id="en" placeholder="Example: Lunch" required>
+                            <label for="ea">Amount (<span class="cur">USD</span>)</label>
+                            <input id="ea" type="number" min="1" step="0.01" placeholder="Example: 500" required>
+                            <label for="ec">Category</label>
+                            <select id="ec" required></select>
+                            <button class="btn" type="submit">Add Expense</button>
+                        </form>
+                        <p id="msg" aria-live="polite"></p>
+                    </div>
+                    <h2 class="t" style="font-size:1.3rem;margin-top:2rem">Recent Transactions</h2>
+                    <div id="recent" style="margin-top:1rem"></div>
+                </section>
+
+                <!-- Transactions page -->
+                <section class="page" id="p-tx">
+                    <h1 class="pt">Transactions</h1>
+                    <div class="filters"><input type="search" id="q" placeholder="Search transactions..."><select id="fc"></select></div>
+                    <div id="all"></div>
+                </section>
+
+                <!-- Budgets page -->
+                <section class="page" id="p-bud">
+                    <h1 class="pt">Budgets</h1>
+                    <p class="small">Change any limit and it saves automatically.</p>
+                    <div class="grid3" id="bl" style="margin-top:1rem"></div>
+                </section>
+
+                <!-- Savings goals page -->
+                <section class="page" id="p-goals">
+                    <h1 class="pt">Savings Goals</h1>
+                    <p class="small">Set a goal, track your progress, and stay motivated to reach it.</p>
+                    <div class="box" style="margin-top:1rem">
+                        <form class="f" id="gf">
+                            <label for="gn">Goal name</label>
+                            <input id="gn" placeholder="Example: New laptop" required>
+                            <label for="gt">Target amount (<span class="cur">USD</span>)</label>
+                            <input id="gt" type="number" min="1" step="0.01" placeholder="Example: 1500" required>
+                            <label for="gd">Target date (optional)</label>
+                            <input id="gd" type="date">
+                            <button class="btn" type="submit">Create goal</button>
+                        </form>
+                    </div>
+                    <div class="grid3" id="gl" style="margin-top:1.2rem"></div>
+                </section>
+
+                <!-- Recurring expenses page -->
+                <section class="page" id="p-rec">
+                    <h1 class="pt">Recurring Expenses</h1>
+                    <p class="small">Keep track of rent, subscriptions, bills, and other regular payments.</p>
+                    <div class="stats">
+                        <div class="box stat"><small>🔄 Monthly commitments</small><b id="rtot">0</b></div>
+                        <div class="box stat"><small>⏰ Due now</small><b id="rnow">0</b></div>
+                    </div>
+                    <div class="box">
+                        <form class="f" id="rf">
+                            <label for="rn">Payment name</label>
+                            <input id="rn" placeholder="Example: Rent" required>
+                            <label for="ra">Amount (<span class="cur">USD</span>)</label>
+                            <input id="ra" type="number" min="1" step="0.01" required>
+                            <label for="rc">Category</label>
+                            <select id="rc" required></select>
+                            <label for="rq">How often</label>
+                            <select id="rq">
+                                <option value="monthly">Every month</option>
+                                <option value="weekly">Every week</option>
+                            </select>
+                            <label for="rd">Next due date</label>
+                            <input id="rd" type="date" required>
+                            <button class="btn" type="submit">Add recurring payment</button>
+                        </form>
+                    </div>
+                    <div id="rl" style="margin-top:1.2rem"></div>
+                </section>
+
+                <!-- Money challenges page -->
+                <section class="page" id="p-ch">
+                    <h1 class="pt">Money Challenges</h1>
+                    <p class="small">Try simple saving challenges and build better money habits.</p>
+                    <div class="grid3" id="cl" style="margin-top:1rem"></div>
+                </section>
+
+                <!-- Analytics page -->
+                <section class="page" id="p-ana">
+                    <h1 class="pt">Analytics</h1>
+                    <p class="small" id="ins"></p>
+                    <div class="box" style="margin-top:1rem" id="ab"></div>
+                </section>
+
+                <!-- Settings page -->
+                <section class="page" id="p-set">
+                    <h1 class="pt">Settings</h1>
+                    <div class="box" style="max-width:520px;margin-top:1rem;display:grid;gap:.7rem">
+                        <label for="sn">Your name</label>
+                        <input id="sn">
+                        <button class="btn" id="sv">Save name</button>
+                        <label for="scr">Currency</label>
+                        <select id="scr"></select>
+                        <hr style="border:0;border-top:1px solid var(--border);margin:.5rem 0">
+                        <button class="btn ghost" id="theme2">🌓 Switch light/dark</button>
+                        <button class="btn ghost" id="lo">Log out</button>
+                        <button class="btn red" id="rs">Reset all data</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- First-time setup pop-up -->
+        <div class="modal" id="setup" hidden>
+            <div class="card">
+                <h2>👋 Welcome to SpendWise</h2>
+                <p class="small" style="margin:.3rem 0 1rem">Choose your currency and set a monthly limit for each category. You can change these later.</p>
+                <form class="f" id="sf" style="max-width:none">
+                    <label for="scur">Currency</label>
+                    <select id="scur"></select>
+                    <div id="sl" style="display:grid;gap:.6rem"></div>
+                    <button class="btn" type="submit">Start Tracking 🚀</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Privacy policy pop-up -->
+        <div class="modal" id="priv" hidden>
+            <div class="card" style="max-width:640px">
+                <h2>🔒 Privacy Policy</h2>
+                <p class="small">Last updated: November 13, 2026</p>
+                <div style="max-height:60vh;overflow-y:auto;margin:1rem 0;display:grid;gap:1rem;padding-right:.3rem">
+                    <div>
+                        <h3>What we collect</h3>
+                        <p class="small">Your name, your email address or phone number, and your password (stored only as a salted, scrambled hash, never as plain text). We also keep what you enter in the app: budgets, expenses, savings goals, recurring payments and challenge progress.</p>
+                    </div>
+                    <div>
+                        <h3>Where it is stored</h3>
+                        <p class="small">Everything is saved in your own browser, on the device you are using. SpendWise has no server, so your information is not sent to us or to anyone else.</p>
+                    </div>
+                    <div>
+                        <h3>What we do not do</h3>
+                        <p class="small">We do not sell or share your data, show ads, or track you across websites.</p>
+                    </div>
+                    <div>
+                        <h3>Your control</h3>
+                        <p class="small">You can change your name and currency in Settings. “Reset all data” in Settings clears your budgets, expenses and goals. Clearing this site’s data in your browser removes everything, including your account, and it cannot be recovered.</p>
+                    </div>
+                    <div>
+                        <h3>Keeping it safe</h3>
+                        <p class="small">Because your data lives on your device, anyone who can open your browser could see it. Use a screen lock and log out on shared devices.</p>
+                    </div>
+                    <div>
+                        <h3>Changes</h3>
+                        <p class="small">If SpendWise ever adds online accounts or syncing, this policy will be updated before any data is collected that way.</p>
+                    </div>
+                    <div>
+                        <h3>Contact</h3>
+                        <p class="small">Questions? Email Feisal Abdi Yussuf at feisalabdiyussuf1@gmail.com.</p>
+                    </div>
+                </div>
+                <button class="btn" id="pvc" type="button">Close</button>
+            </div>
+        </div>
+
+        <!-- Sign up / log in pop-up -->
+        <div class="modal" id="auth" hidden>
+            <div class="card">
+                <div class="tabs"><button class="tab on" data-m="up" type="button">Sign up</button><button class="tab" data-m="in" type="button">Log in</button></div>
+                <form class="f" id="af" style="max-width:none">
+                    <div id="nmw"><label for="an">Full name</label><input id="an" autocomplete="name" placeholder="Example: Amina Hassan"></div>
+                    <div class="tabs"><button class="tab on" data-t="email" type="button">Email</button><button class="tab" data-t="phone" type="button">Phone</button></div>
+                    <label for="ac" id="acl">Email address</label>
+                    <input id="ac" type="email" autocomplete="username" required>
+                    <label for="ap">Password</label>
+                    <input id="ap" type="password" minlength="8" placeholder="At least 8 characters" required>
+                    <button class="btn" type="submit" id="asub">Create account</button>
+                </form>
+                <p class="small" id="aerr" style="color:var(--bad);margin-top:.6rem;font-weight:600" aria-live="polite"></p>
+                <p class="small" style="margin-top:.6rem">🔒 Your account is saved on this device only.</p>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="script.js"></script>
+    </body>
+</html>
+````
