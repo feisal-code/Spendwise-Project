@@ -112,29 +112,29 @@ Netlify was configured to monitor the connected GitHub repository. After the new
 
 This demonstrates the basic GitHub → Netlify continuous deployment workflow used by the project.
 
-Deployment Challenges
+Challenges Encountered During Deployment
 
-Several practical considerations were encountered during deployment:
+One of the main challenges was ensuring that the complete project structure and all referenced assets were available in the GitHub repository before deployment.
 
-Project Organization
+Another challenge was configuring the GitHub repository correctly with Netlify and verifying that the deployed version reflected the latest changes pushed to the repository.
 
-All required application files needed to be correctly organized before deployment. Incorrect file locations or references could prevent CSS, JavaScript, or other assets from loading correctly on the live site.
+Testing the production version was also important because files that work correctly in a local development environment can produce missing-resource issues after deployment if their paths or references are incorrect.
 
-Repository Configuration
-
-The GitHub repository needed to contain the complete project and be correctly connected to the Netlify deployment environment.
-
-Local vs Production Testing
-
-An application may function correctly in a local development environment while encountering issues after deployment. Testing the live URL was therefore necessary to verify that resources and JavaScript functionality continued to work correctly in the production environment.
-
-Continuous Deployment Verification
-
-A separate update was required to confirm that changes pushed to GitHub were automatically reflected in the deployed Netlify application.
+A further challenge was verifying continuous deployment. A visible version update was pushed to GitHub, and the live Netlify website was checked to confirm that the updated SpendWise v1.1 version was deployed automatically.
 
 Lessons Learned
 
-This project provided practical experience with the workflow involved in taking a frontend application from development to production.
+This project provided practical experience with taking a client-side web application from development through version control and production deployment.
+
+The key lessons learned include:
+
+- Proper project organization is important before deployment.
+- All files referenced by HTML, CSS, and JavaScript must be included in the repository.
+- GitHub provides version control and a central location for maintaining the project's source code.
+- Netlify can automatically deploy changes pushed to a connected GitHub repository.
+- Production testing is necessary to identify issues that may not be obvious during local development.
+- Clear README documentation makes the project easier to understand, evaluate, and maintain.
+- Continuous deployment provides a more efficient workflow because updates can be published without manually uploading the entire project.
 
 Key lessons include:
 
