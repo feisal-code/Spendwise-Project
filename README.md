@@ -20,15 +20,16 @@ Key Features
 - Theme Support — Light and dark interface themes.
 - Privacy Information — Privacy policy accessible from the application footer.
 
-Technologies & Development Tools
+## Technologies & Development Tools
 
-Technology| Purpose
-HTML5| Application structure and semantic content
-CSS3| Layout, styling, responsiveness, and themes
-JavaScript| Application logic, interactivity, calculations, validation, and DOM manipulation
-Git| Version control
-GitHub| Source-code hosting and version management
-Netlify| Deployment and continuous delivery
+| Technology | Purpose |
+|---|---|
+| HTML5 | Application structure and semantic content |
+| CSS3 | Layout, styling, responsiveness, and themes |
+| JavaScript | Application logic, interactivity, calculations, validation, and DOM manipulation |
+| Git | Version control |
+| GitHub | Source-code hosting and version management |
+| Netlify | Deployment and continuous delivery |
 
 The application is implemented using vanilla JavaScript without a frontend framework.
 
